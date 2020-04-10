@@ -21,3 +21,5 @@ def measure_temp():
         return (-intvalue/16)
     else:
         return (intvalue/16)
+if __name__ == '__main__':
+    measure_temp()
