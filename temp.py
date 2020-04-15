@@ -1,3 +1,5 @@
+import glob
+
 def measure_temp():
     dir = '/sys/bus/w1/devices/'
     device = glob.glob(dir + '28*')[0]
@@ -22,4 +24,5 @@ def measure_temp():
     else:
         return (intvalue/16)
 if __name__ == '__main__':
-    measure_temp()
+    t=measure_temp()
+    print(t)
